@@ -1,0 +1,155 @@
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  height: 3em;
+  border-bottom: 1px solid black;
+}
+
+.navbtn {
+  padding: .7em;
+  border-radius: 2em;
+  border: none;
+  background-color: hsl(213, 100%, 83%);
+}
+
+.navbtn:hover {
+  background-color: rgb(131, 131, 131);
+  color: hsl(0, 0%, 100%);
+}
+
+.navbtn-container {
+  display: flex;
+  gap: 1em;
+}
+
+.create-channel-container {
+  margin-bottom: 1em;
+  margin-top: .2em;
+  gap: 1em;
+}
+
+.channel-container {
+  display: flex;
+  align-items: center;
+  background-color: hsl(213, 100%, 91%);
+  margin-bottom: 1em;
+  border-radius: .5em;
+  flex-direction: column;
+  padding-bottom: 1em;
+}
+
+.channel-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1em;
+}
+
+.channel-title, .channel-created-by {
+ height: 0em;
+} 
+
+
+.channel-container:hover {
+  background-color: rgb(131, 131, 131);
+  color: hsl(0, 0%, 100%);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.create-channel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.create-channel-input {
+  border-radius: 1;
+  border: 1px solid black;
+  padding: .5em;
+}
+
+.create-channel-btn {
+  border-radius: 1em;
+  border: none;
+  padding: .6em;
+  background-color: rgb(218, 218, 218);
+}
+
+.create-channel-btn:hover {
+  background-color: rgb(131, 131, 131);
+  color: hsl(0, 0%, 100%);
+}
+
+.broadcast-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.broadcast-input {
+  width: 30em;
+}
+
+.broadcast-textarea {
+  resize: none;
+  width: 30em;
+  height: 5em;
+}
+
+
+.messageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+}
+
+.my-message-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.my-message {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgreen;
+  width: 8em;
+  padding: .5em;
+  margin-bottom: 1em;
+  border-radius: 1em;
+}
+
+.other-user-container {
+  display: flex; 
+  justify-content: flex-start;
+}
+
+.other-user-message {
+  display: flex;
+  flex-direction: column;
+  background-color: lightskyblue;
+  width: 8em;
+  padding: .5em;
+  margin-bottom: 1em;
+  border-radius: 1em;
+}
+
+.chatContainer {
+  width: 20em;
+  align-items: center;
+}
