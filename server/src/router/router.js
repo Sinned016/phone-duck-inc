@@ -30,7 +30,7 @@ router.post("/create/account/", async (req, res) => { // Skapar konto
     if(result.matchedCount !== 0) {
         res.status(400).send("Username is already taken");
     } else {
-        res.status(200).send("Account created")
+        res.status(201).send("Account created")
     }
 })
 
