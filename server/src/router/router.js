@@ -205,7 +205,7 @@ router.post("/broadcast/", jwtFilter.authorizeAdmin, async (req, res) => { // sk
     }else {
         const newBroadcast = await fetchCollection("broadcast").insertOne(broadcast);
         await fetch("http://127.0.0.1:5000/broadcast/"); // Säger åt socket att emitta till alla som är uppkopplade
-        res.send(newBroadcast)
+        res.status(201).send(newBroadcast)
     }
 })
 
