@@ -31,8 +31,8 @@ function authorizeAdmin(req, res, next) {
         res.status(400); //bad request
         res.send("Authorization header is missing");
     } else {
-        const decoded = jwtUtil.getUser(req)
         const authToken = authHeader.replace("Bearer ", "");
+        const decoded = jwtUtil.verify(authToken);
 
         if(decoded.role == "ADMIN") {
             try { // försök verifera **
