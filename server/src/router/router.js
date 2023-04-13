@@ -203,9 +203,15 @@ router.post("/broadcast/", jwtFilter.authorizeAdmin, async (req, res) => { // sk
         res.status(400).send({error: "Missing channel message"})
 
     }else {
-        const newBroadcast = await fetchCollection("broadcast").insertOne(broadcast);
-        await fetch("http://127.0.0.1:5000/broadcast/"); // Säger åt socket att emitta till alla som är uppkopplade
-        res.status(201).send(newBroadcast)
+        
+        try {
+            const newBroadcast = await fetchCollection("broadcast").insertOne(broadcast);
+            await fetch("http://127.0.0.1:5000/broadcast/"); // Säger åt socket att emitta till alla som är uppkopplade
+            res.status(201).send(newBroadcast)
+        } catch (err) {
+            res.status(500)
+            res.send(err.clientMessage)
+        }
     }
 })
 
