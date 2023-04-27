@@ -1,4 +1,5 @@
-This is me and my groups finished project for our Backend course, the focus was only on backend but we decided to add a frontend aswell because we had time over.
+This is me and my groups finished project for our Backend course, the focus was only on the backend but we decided to add a frontend aswell because we had time over.
+Very simple CSS.
 
 Frontend is made with React.
 On the backend we are using nodejs and expressjs.
