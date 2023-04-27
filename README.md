@@ -4,4 +4,6 @@ Frontend is made with React.
 On the backend we are using nodejs and expressjs.
 The database we are using is MongoDB (noSQL).
 
+Also tried using sockets for the first time.
+
 Note that there is no github pages for this because I don't have an active server/database running.
